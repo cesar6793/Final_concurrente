@@ -80,7 +80,7 @@ func sendDataToServer(data []DataPoint, address string, wg *sync.WaitGroup, resu
 }
 
 func main() {
-	url := "https://raw.githubusercontent.com/tu_usuario/tu_repositorio/main/datos_delitos.csv"
+	url := "https://raw.githubusercontent.com/tu_usuario/Final_concurrente/main/delitos.csv"
 	data, err := loadDataFromURL(url)
 	if err != nil {
 		log.Fatal(err)
